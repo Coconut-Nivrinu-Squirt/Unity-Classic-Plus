@@ -1,0 +1,99 @@
+BZR merge-modified list format 1
+file_id: default.conf-20091210200223-kl4gv722zqae40ig-2
+hash: 7b1821dab2940be6c636f176009037203e90a83f
+
+file_id: bzrignore-20091013193357-u39j4ff1k3tw3ha1-1
+hash: b37c67682dc2aff48d744f31420d7ac983a2bd99
+
+file_id: makefile.am-20091013184839-4np0bciz8qo0b3lv-1
+hash: e8e1b2508dabf95eba7356565adf94e2964a122f
+
+file_id: makefile.am.coverage-20120327210300-1p9o3ao72y0zqszd-1
+hash: 3d964220756f1614c52dff474d39dfd559d47c14
+
+file_id: autogen.sh-20091013184940-gy12hl2jkauws5k1-1
+hash: 6d3e87a820053e7010f06d417ac59661f214076c
+
+file_id: configure.ac-20091013184839-4np0bciz8qo0b3lv-2
+hash: f37a2309f311a5ab1d2e5f5343164877f1b238dc
+
+file_id: makefile.am-20091013184823-lr02ibsn4jp31jad-1
+hash: fc094db2c8ac9ec6f34d4ac1406411974f0e4215
+
+file_id: indicatorapplication-20130529161750-68s4frwpcf700j6t-1
+hash: 86610fb195ba20a5d7a25e72888d07aaa428ba8a
+
+file_id: indicatorapplication-20131029000000-84evgaa3bk1u5tic-1
+hash: 076882a520839a3b4a56958befb82e13ee66e9fc
+
+file_id: orderingoveride.keyf-20100810211212-gd8ou7rfdid163jr-1
+hash: 88454a6fd89395ccc752a1a40c5a3e8275d3e2b3
+
+file_id: makefile.am-20140220032634-nkwcwnvlk6zw8tk0-1
+hash: d416875b709d2283fae79b777e594003f39851f6
+
+file_id: indicatorapplication-20140220031357-89eps3qaky63qub7-1
+hash: 9cb266cb445a40d4f61049fe29a560895f0107b2
+
+file_id: changelog-20091102011209-0tu4wfm2gvucbft6-2
+hash: b72d94ce27f855ef4a26001d21cf62902a80afbc
+
+file_id: compat-20091102011209-0tu4wfm2gvucbft6-3
+hash: b6abd567fa79cbe0196d093a067271361dc6ca8b
+
+file_id: control-20091102011209-0tu4wfm2gvucbft6-4
+hash: f11485e44d50da98ceb2ff1383eafbf1cabd7cb9
+
+file_id: copyright-20091102011209-0tu4wfm2gvucbft6-5
+hash: 42894f324471d603686fcaa8d8ae281d228a9b97
+
+file_id: rules-20091102011209-0tu4wfm2gvucbft6-6
+hash: 79e41a79d24eaada46532b20af721b2ce3545d4c
+
+file_id: watch-20091102011209-0tu4wfm2gvucbft6-7
+hash: 760bf3a0e429022d0cea64ee2d8b631fb2928eae
+
+file_id: gcov.m4-20111206214459-krjz0a1vz5cwmu3r-1
+hash: 10bb52d795dcf18f849ef614e3b5f33074b9f76d
+
+file_id: makefile.am-20091013184823-lr02ibsn4jp31jad-2
+hash: 9444b2e55cdde2b5aa1b51c331c5f2d80bcfbb2d
+
+file_id: appindicator1.1.pc.i-20100619051454-bshel7swysjtdq25-1
+hash: ed35129e04c1e6533b245b3352c47331e97ff781
+
+file_id: customserviceappstor-20091028195716-3dorlqld342qed19-1
+hash: 3ac3fd910f259abdaaef669d8ee2e1482d5fe645
+
+file_id: customserviceappstor-20091028195716-3dorlqld342qed19-2
+hash: 66b215776c8e7f294c6431079b6532fbf51ebca8
+
+file_id: customservicewatcher-20091106225501-syr1u70f7vy0z7v2-1
+hash: 78c6e4f16a93df8da2a0d7754118be7feb7c0637
+
+file_id: customservicewatcher-20091106225501-syr1u70f7vy0z7v2-2
+hash: 4ba8f1e96d874fc230cf45c72c10612cbfa3e809
+
+file_id: customservice.c-20091013203600-b5edrl3mg5wwxjnr-1
+hash: 5252b772b2999faa6dc4dfd0e3c83ab7802f99c6
+
+file_id: customservice.xml-20091028195133-xwwc5gqxb172vz0n-1
+hash: 18ff27c7cad039079528234bd0b45790c6636912
+
+file_id: dbusshared.h-20091103015034-2tzpu390zlfplb76-1
+hash: 00d9ec8d0460902047f6e70ed43474cf7d1a53d3
+
+file_id: generateid.c-20100810164132-lua8l0ryw3nqhefo-1
+hash: 15db83a6980b2cf7080a461d75d3196a0d39e26e
+
+file_id: generateid.h-20100810164132-lua8l0ryw3nqhefo-2
+hash: e610602358157b8ba7c5616336805b1b520c4492
+
+file_id: indicatorcustom.c-20091013203608-l7l1xeo1dmp9mtcd-1
+hash: f08dfde6cfe3fb5835c80f88fb9afd9f92f48ee1
+
+file_id: notificationwatcher.-20091013221633-06ezqfstjeif5r0s-2
+hash: d0d1c1792e8e0bdf8089a967226af5b1700843cd
+
+file_id: makefile.am-20091021041820-v0dtf0hygxmubrvb-1
+hash: 8047335279dc13732d72ff90fd044fa2ae7dd550

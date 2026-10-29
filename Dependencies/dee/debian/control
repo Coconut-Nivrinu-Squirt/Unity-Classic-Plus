@@ -1,0 +1,101 @@
+Source: dee
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Build-Depends: dbus-test-runner,
+               debhelper (>= 9),
+               dh-autoreconf,
+               gir1.2-freedesktop,
+               gir1.2-glib-2.0,
+               gnome-common,
+               gobject-introspection (>= 0.10.2),
+               gtk-doc-tools,
+               libglib2.0-dev (>= 2.26.0),
+               libgirepository1.0-dev,
+               libdbus-glib-1-dev (>= 0.80),
+               libdbus-1-dev (>= 1.0),
+               libicu-dev (>= 4.8),
+               python (>= 2.6.5),
+               python-gi,
+               python3,
+               python3-gi,
+               valac
+Standards-Version: 3.9.3
+Section: libs
+Homepage: https://launchpad.net/dee
+# If you aren't a member of ~unity-team but need to upload packaging changes,
+# just go ahead.  ~unity-team will notice and sync up the code again.
+Vcs-Bzr: https://code.launchpad.net/~unity-team/dee/trunk
+
+Package: libdee-1.0-4
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: model to synchronize multiple instances over DBus - shared lib
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains shared libraries to be used by applications.
+
+Package: libdee-dev
+Section: libdevel
+Architecture: any
+Depends: libdee-1.0-4 (= ${binary:Version}),
+         ${misc:Depends},
+         gir1.2-dee-1.0,
+         libglib2.0-dev (>= 2.22.0),
+         libdbus-glib-1-dev (>= 0.80)
+Suggests: libdee-doc
+Description: model to synchronize multiple instances over DBus - dev files
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains files that are needed to build applications.
+
+Package: libdee-1.0-4-dbg
+Section: debug
+Architecture: any
+Multi-Arch: same
+Priority: extra
+Depends: libdee-1.0-4 (= ${binary:Version}),
+         ${misc:Depends}
+Description: model to synchronize multiple instances over DBus
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains the debug files.
+
+Package: libdee-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: devhelp
+Description: model to synchronize multiple instances over DBus - documentation
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains the documentation
+
+Package: gir1.2-dee-1.0
+Section: introspection
+Architecture: any
+Depends: ${gir:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Replaces: gir1.2-dee-0.5
+Description: GObject introspection data for the Dee library
+ This package contains introspection data for the Dee library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: dee-tools
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: model to synchronize multiple instances over DBus - tooling
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains the tooling for introspecting dee data.

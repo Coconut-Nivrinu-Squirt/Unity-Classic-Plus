@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/com/ubuntu/connectivity1/Connection/OpenVpn" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
+    <interface name="com.ubuntu.connectivity1.vpn.VpnConnection.OpenVpn">
+
+        <!--basic -->
+
+        <property name="connectionType" type="i" access="readwrite"/>
+        <property name="remote" type="s" access="readwrite"/>
+
+        <property name="ca" type="s" access="readwrite"/>
+
+        <property name="cert" type="s" access="readwrite"/>
+        <property name="certPass" type="s" access="readwrite"/>
+
+        <property name="key" type="s" access="readwrite"/>
+
+        <property name="username" type="s" access="readwrite"/>
+        <property name="password" type="s" access="readwrite"/>
+
+        <property name="localIp" type="s" access="readwrite"/>
+        <property name="remoteIp" type="s" access="readwrite"/>
+        <property name="staticKey" type="s" access="readwrite"/>
+        <property name="staticKeyDirection" type="i" access="readwrite"/>
+        
+        <!--advanced->general -->
+
+        <property name="portSet" type="b" access="readwrite"/>
+        <property name="port" type="i" access="readwrite"/>
+
+        <property name="renegSecondsSet" type="b" access="readwrite"/>
+        <property name="renegSeconds" type="i" access="readwrite"/>
+
+        <property name="compLzo" type="b" access="readwrite"/>
+
+        <property name="protoTcp" type="b" access="readwrite"/>
+
+        <property name="devTypeSet" type="b" access="readwrite"/>
+        <property name="devType" type="i" access="readwrite"/>
+        <property name="dev" type="s" access="readwrite"/>
+
+        <property name="tunnelMtuSet" type="b" access="readwrite"/>
+        <property name="tunnelMtu" type="i" access="readwrite"/>
+
+        <property name="fragmentSizeSet" type="b" access="readwrite"/>
+        <property name="fragmentSize" type="i" access="readwrite"/>
+
+        <property name="mssFix" type="b" access="readwrite"/>
+    
+        <property name="remoteRandom" type="b" access="readwrite"/>
+
+        <!--advanced->security -->
+
+        <property name="cipher" type="i" access="readwrite"/>
+
+        <property name="keysizeSet" type="b" access="readwrite"/>
+        <property name="keysize" type="i" access="readwrite"/>
+
+        <property name="auth" type="i" access="readwrite"/>
+
+        <!-- advanced->tls auth (N/A for static key) -->
+
+        <property name="tlsRemote" type="s" access="readwrite"/>
+
+        <property name="remoteCertTlsSet" type="b" access="readwrite"/>
+        <property name="remoteCertTls" type="i" access="readwrite"/>
+
+        <property name="taSet" type="b" access="readwrite"/>
+        <property name="ta" type="s" access="readwrite"/>
+        <property name="taDir" type="i" access="readwrite"/>
+        
+        <!-- advanced->proxies -->
+
+        <property name="proxyType" type="i" access="readwrite"/>
+
+        <property name="proxyServer" type="s" access="readwrite"/>
+
+        <property name="proxyPort" type="i" access="readwrite"/>
+    
+        <property name="proxyRetry" type="b" access="readwrite"/>
+
+        <property name="proxyUsername" type="s" access="readwrite"/>
+
+        <property name="proxyPassword" type="s" access="readwrite"/>
+
+    </interface>
+</node>

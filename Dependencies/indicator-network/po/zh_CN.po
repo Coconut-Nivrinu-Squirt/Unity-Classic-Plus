@@ -1,0 +1,257 @@
+# Chinese (Simplified) translation for indicator-network
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the indicator-network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: indicator-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-29 12:38+0300\n"
+"PO-Revision-Date: 2016-02-15 17:40+0000\n"
+"Last-Translator: Pete Woods <Unknown>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2016-08-25 06:10+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: \n"
+
+#: ../src/agent/SecretRequest.cpp:61
+msgid "Connect to “%1”"
+msgstr "连接到\"%1\""
+
+#: ../src/agent/SecretRequest.cpp:66
+msgid "WPA"
+msgstr "WPA"
+
+#: ../src/agent/SecretRequest.cpp:68
+msgid "WEP"
+msgstr "WEP"
+
+#: ../src/agent/SecretRequest.cpp:74
+msgid "Connect"
+msgstr "连接"
+
+#: ../src/agent/SecretRequest.cpp:75
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/indicator/menuitems/wifi-link-item.cpp:109
+msgid "Other network…"
+msgstr "其他网络..."
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:90
+msgid "No SIM"
+msgstr "无SIM卡"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:97
+msgid "SIM Error"
+msgstr "SIM卡错误"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:105
+msgid "SIM Locked"
+msgstr "SIM卡被锁定"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:118
+msgid "Unregistered"
+msgstr "未注册"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:123
+msgid "Unknown"
+msgstr "未知"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:128
+msgid "Denied"
+msgstr "已拒绝"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:133
+msgid "Searching"
+msgstr "正在搜索"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:145
+msgid "No Signal"
+msgstr "无信号"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:157
+#: ../src/indicator/menuitems/wwan-link-item.cpp:164
+msgid "Offline"
+msgstr "离线"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:187
+msgid "Wi-Fi"
+msgstr "WLAN"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:198
+msgid "Flight Mode"
+msgstr "飞行模式"
+
+#: ../src/indicator/factory.cpp:208
+msgid "Cellular data"
+msgstr "蜂窝数据"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:221
+msgid "Hotspot"
+msgstr "热点"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:144
+msgid "Sorry, incorrect %{1} PIN."
+msgstr "抱歉，%{1} 的PIN 码错误."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:149
+#: ../src/indicator/sim-unlock-dialog.cpp:178
+msgid "This will be your last attempt."
+msgstr "这是您最后的尝试机会。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:151
+msgid ""
+"If %{1} PIN is entered incorrectly you will require your PUK code to unlock."
+msgstr "如果 %{1} 的 PIN 码输入错误，你需要用 PUK 码解锁."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:161
+msgid "Sorry, your %{1} is now blocked."
+msgstr "抱歉，您的 %{1} 被锁定。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:166
+msgid "Please enter your PUK code to unblock SIM card."
+msgstr "请输入 PUK 码来解锁您的 SIM 卡。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:168
+msgid "You may need to contact your network provider for PUK code."
+msgstr "你需要联系网络运营商来取得PUK码。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:176
+#: ../src/indicator/sim-unlock-dialog.cpp:190
+msgid "Sorry, incorrect PUK."
+msgstr "抱歉，PUK 码错误。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:180
+msgid ""
+"If PUK code is entered incorrectly, your SIM card will be blocked and needs "
+"replacement."
+msgstr "如果您输入的 PUK 码错误，您的 SIM 卡将被锁定并需要更换。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:182
+msgid "Please contact your network provider."
+msgstr "请联系您的网络运营商。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:192
+msgid "Your SIM card is now permanently blocked and needs replacement."
+msgstr "您的 SIM 卡已被永久锁定并且需要更换。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:194
+msgid "Please contact your service provider."
+msgstr "请联系您的服务提供商。"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:218
+msgid "Sorry, incorrect PIN"
+msgstr "抱歉，PIN 码错误"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:230
+msgid "Sorry, incorrect PUK"
+msgstr "抱歉，PUK 码错误"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:292
+msgid "Enter %{1} PIN"
+msgstr "输入 %{1} PIN"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:300
+msgid "Enter PUK code"
+msgstr "输入 PUK 码"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:304
+msgid "Enter PUK code for %{1}"
+msgstr "输入 %{1} 的PUK码"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:315
+#, c-format
+msgid "1 attempt remaining"
+msgid_plural "%d attempts remaining"
+msgstr[0] "还有 %d 次机会"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:326
+msgid "Enter new %{1} PIN"
+msgstr "输入 %{1} 新的PIN"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:334
+msgid "Confirm new %{1} PIN"
+msgstr "确认 %{1} 新的PIN"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:373
+msgid "PIN codes did not match."
+msgstr "PIN 码不一致。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:48
+msgid "The VPN connection '%1' failed."
+msgstr "VPN连接 '%1' 失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:50
+msgid ""
+"The VPN connection '%1' failed because the network connection was "
+"interrupted."
+msgstr "VPN连接'%1'因网络连接中断而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:51
+msgid ""
+"The VPN connection '%1' failed because the VPN service stopped unexpectedly."
+msgstr "VPN连接'%1'因VPN服务意外终止而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:52
+msgid ""
+"The VPN connection '%1' failed because the VPN service returned invalid "
+"configuration."
+msgstr "VPN连接'%1'因VPN服务返回了无效配置而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:53
+msgid ""
+"The VPN connection '%1' failed because the connection attempt timed out."
+msgstr "VPN连接'%1'因连接尝试超时而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:54
+msgid ""
+"The VPN connection '%1' failed because the VPN service did not start in time."
+msgstr "VPN连接'%1'因VPN服务未能及时启动而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:55
+msgid ""
+"The VPN connection '%1' failed because the VPN service failed to start."
+msgstr "VPN连接'%1'因VPN服务启动失败而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:56
+msgid ""
+"The VPN connection '%1' failed because there were no valid VPN secrets."
+msgstr "VPN连接'%1'因不存在有效的VPN密码而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:57
+msgid "The VPN connection '%1' failed because of invalid VPN secrets."
+msgstr "VPN连接'%1'因VPN密钥无效而失败。"
+
+#: ../src/indicator/vpn-status-notifier.cpp:68
+msgid "VPN Connection Failed"
+msgstr "VPN 连接失败"
+
+#: ../src/indicator/sections/wwan-section.cpp:102
+msgid "Cellular settings…"
+msgstr "蜂窝移动网络设置..."
+
+#: ../src/indicator/sections/vpn-section.cpp:140
+msgid "VPN settings…"
+msgstr "VPN设置..."
+
+#: ../src/indicator/sections/wifi-section.cpp:65
+msgid "Wi-Fi settings…"
+msgstr "WLAN 设置..."
+
+#. TRANSLATORS: this is the indicator title shown on the top header of the indicator area
+#: ../src/indicator/root-state.cpp:306
+msgid "Network"
+msgstr "网络"
+
+#: ../src/indicator/nmofono/vpn/vpn-manager.cpp:81
+msgid "VPN connection %1"
+msgstr "VPN连接 %1"

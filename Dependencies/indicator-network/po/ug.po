@@ -1,0 +1,264 @@
+# Uyghur translation for indicator-network
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the indicator-network package.
+# Gheyret Kenji <gheyret@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: indicator-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-29 12:38+0300\n"
+"PO-Revision-Date: 2016-02-15 17:40+0000\n"
+"Last-Translator: Gheyret T.Kenji <Unknown>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2016-08-25 06:10+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: \n"
+
+#: ../src/agent/SecretRequest.cpp:61
+msgid "Connect to “%1”"
+msgstr "«%1» غا باغلان"
+
+#: ../src/agent/SecretRequest.cpp:66
+msgid "WPA"
+msgstr "WPA"
+
+#: ../src/agent/SecretRequest.cpp:68
+msgid "WEP"
+msgstr "WEP"
+
+#: ../src/agent/SecretRequest.cpp:74
+msgid "Connect"
+msgstr "باغلان"
+
+#: ../src/agent/SecretRequest.cpp:75
+msgid "Cancel"
+msgstr "ئەمەلدىن قالدۇر"
+
+#: ../src/indicator/menuitems/wifi-link-item.cpp:109
+msgid "Other network…"
+msgstr "باشقا تور…"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:90
+msgid "No SIM"
+msgstr "SIM  يوق"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:97
+msgid "SIM Error"
+msgstr "SIM خاتالىقى"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:105
+msgid "SIM Locked"
+msgstr "SIM قۇلۇپلانغان"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:118
+msgid "Unregistered"
+msgstr "رويخەتتىن ئۆچۈرۈلدى"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:123
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:128
+msgid "Denied"
+msgstr "رەت قىلىنغان"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:133
+msgid "Searching"
+msgstr "ئىزدەۋاتىدۇ"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:145
+msgid "No Signal"
+msgstr "سىگنال يوق"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:157
+#: ../src/indicator/menuitems/wwan-link-item.cpp:164
+msgid "Offline"
+msgstr "توردا يوق"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:187
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:198
+msgid "Flight Mode"
+msgstr "ئايروپىلان ھالىتى"
+
+#: ../src/indicator/factory.cpp:208
+msgid "Cellular data"
+msgstr ""
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:221
+msgid "Hotspot"
+msgstr "قىزىق نۇقتا"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:144
+msgid "Sorry, incorrect %{1} PIN."
+msgstr "كەچۈرۈڭ، %{1} PIN توغرا ئەمەس."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:149
+#: ../src/indicator/sim-unlock-dialog.cpp:178
+msgid "This will be your last attempt."
+msgstr "بۇ سىزنىڭ ئەڭ ئاخىرقى پۇرسىتىڭىز."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:151
+msgid ""
+"If %{1} PIN is entered incorrectly you will require your PUK code to unlock."
+msgstr ""
+"ئەگەر %{1} PIN كودى توغرا كىرگۈزۈلمىسە، قۇلۇپسىزلاش ئۈچۈن PUK كودىنى تەلەپ "
+"قىلىدۇ."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:161
+msgid "Sorry, your %{1} is now blocked."
+msgstr "كەچۈرۈڭ، ھازىر %{1}  چەكلەندى."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:166
+msgid "Please enter your PUK code to unblock SIM card."
+msgstr ""
+"چەكلەنگەن SIM كارتىسىنىڭ چېكىنى بىكار قىلىش ئۈچۈن PUK كودىنى كىرگۈزۈڭ."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:168
+msgid "You may need to contact your network provider for PUK code."
+msgstr ""
+"بۇ PUK كودى ئۈچۈن تور تەمىنلىگۈچى بىلەن ئالاقە قىلىشىڭىزغا توغرا كېلىشى "
+"مۇمكىن."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:176
+#: ../src/indicator/sim-unlock-dialog.cpp:190
+msgid "Sorry, incorrect PUK."
+msgstr "كەچۈرۈڭ، PUK توغرا ئەمەس."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:180
+msgid ""
+"If PUK code is entered incorrectly, your SIM card will be blocked and needs "
+"replacement."
+msgstr ""
+"ئەگەر PUK كودىنى توغرا كىرگۈزۈلمىسە، SIM كارتىڭىز چەكلىنىشى ۋە زۆرۈر "
+"تېپىلغاندا ئالماشتۇرۇشقا توغرا كېلىشى مۇمكىن."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:182
+msgid "Please contact your network provider."
+msgstr "تور تەمىنلىگۈچى بىلەن ئالاقە قىلىڭ."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:192
+msgid "Your SIM card is now permanently blocked and needs replacement."
+msgstr "ھازىر SIM كارتا تولۇق چەكلەندى، شۇڭا ئۇنى ئالماشتۇرۇڭ."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:194
+msgid "Please contact your service provider."
+msgstr "مۇلازىمەت تەمىنلىگۈچى بىلەن ئالاقە قىلىڭ."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:218
+msgid "Sorry, incorrect PIN"
+msgstr "كەچۈرۈڭ، PIN توغرا ئەمەس"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:230
+msgid "Sorry, incorrect PUK"
+msgstr "كەچۈرۈڭ، PUK توغرا ئەمەس"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:292
+msgid "Enter %{1} PIN"
+msgstr "%{1} PIN نومۇرىنى كىرگۈزۈڭ"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:300
+msgid "Enter PUK code"
+msgstr "PUK كودىنى كىرگۈزۈڭ"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:304
+msgid "Enter PUK code for %{1}"
+msgstr "%{1} نىڭ يېڭى PUK كودىنى كىرگۈزۈڭ"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:315
+#, c-format
+msgid "1 attempt remaining"
+msgid_plural "%d attempts remaining"
+msgstr[0] "%d قېتىملىق پۇرسىتىڭىز قالدى"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:326
+msgid "Enter new %{1} PIN"
+msgstr "يېڭى %{1} PIN نومۇرىنى كىرگۈزۈڭ"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:334
+msgid "Confirm new %{1} PIN"
+msgstr "يېڭى %{1} PIN كودىنى جەزملەڭ"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:373
+msgid "PIN codes did not match."
+msgstr "PIN نومۇرى ئوخشاشمىدى."
+
+#: ../src/indicator/vpn-status-notifier.cpp:48
+msgid "The VPN connection '%1' failed."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:50
+msgid ""
+"The VPN connection '%1' failed because the network connection was "
+"interrupted."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:51
+msgid ""
+"The VPN connection '%1' failed because the VPN service stopped unexpectedly."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:52
+msgid ""
+"The VPN connection '%1' failed because the VPN service returned invalid "
+"configuration."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:53
+msgid ""
+"The VPN connection '%1' failed because the connection attempt timed out."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:54
+msgid ""
+"The VPN connection '%1' failed because the VPN service did not start in time."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:55
+msgid ""
+"The VPN connection '%1' failed because the VPN service failed to start."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:56
+msgid ""
+"The VPN connection '%1' failed because there were no valid VPN secrets."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:57
+msgid "The VPN connection '%1' failed because of invalid VPN secrets."
+msgstr ""
+
+#: ../src/indicator/vpn-status-notifier.cpp:68
+msgid "VPN Connection Failed"
+msgstr ""
+
+#: ../src/indicator/sections/wwan-section.cpp:102
+msgid "Cellular settings…"
+msgstr "كۆچمە تور تەڭشىكى…"
+
+#: ../src/indicator/sections/vpn-section.cpp:140
+msgid "VPN settings…"
+msgstr ""
+
+#: ../src/indicator/sections/wifi-section.cpp:65
+msgid "Wi-Fi settings…"
+msgstr "سىمسىز تور (wi-fi) تەڭشىكى..."
+
+#. TRANSLATORS: this is the indicator title shown on the top header of the indicator area
+#: ../src/indicator/root-state.cpp:306
+msgid "Network"
+msgstr "تور"
+
+#: ../src/indicator/nmofono/vpn/vpn-manager.cpp:81
+msgid "VPN connection %1"
+msgstr ""

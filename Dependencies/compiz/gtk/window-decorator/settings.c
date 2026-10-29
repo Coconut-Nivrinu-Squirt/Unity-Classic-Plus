@@ -1,0 +1,85 @@
+/*
+ * Copyright © 2006 Novell, Inc.
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ *
+ * Author: David Reveman <davidr@novell.com>
+ */
+
+#include "gtk-window-decorator.h"
+#include "gwd-settings-writable-interface.h"
+#include "gwd-settings-storage-interface.h"
+
+#ifdef USE_GSETTINGS
+#include "gwd-settings-storage-gsettings.h"
+#endif
+
+#include "gwd-settings-xproperty-storage.h"
+
+GWDSettingsStorage *storage = NULL;
+GWDSettingsXPropertyStorage *xprop_storage = NULL;
+
+gboolean
+init_settings (GWDSettingsWritable *writable,
+	       WnckScreen	    *screen)
+{
+#ifdef USE_GSETTINGS
+#define STORAGE_USED
+    GSettings *compiz = gwd_get_org_compiz_gwd_settings ();
+    GSettings *metacity = gwd_get_org_gnome_metacity_settings ();
+    GSettings *gnome  = gwd_get_org_gnome_desktop_wm_preferences_settings ();
+    GSettings *marco = gwd_get_org_mate_marco_general_settings ();
+
+    storage = gwd_settings_storage_gsettings_new (gnome, metacity, marco, compiz, writable);
+
+    gwd_connect_org_compiz_gwd_settings (compiz, storage);
+    gwd_connect_org_gnome_metacity_settings (metacity, storage);
+    gwd_connect_org_gnome_desktop_wm_preferences_settings (gnome, storage);
+    gwd_connect_org_mate_marco_general_settings (marco, storage);
+#endif
+
+    xprop_storage = gwd_settings_xproperty_storage_new (writable);
+
+#ifdef STORAGE_USED
+    gwd_settings_storage_update_metacity_theme (storage);
+    gwd_settings_storage_update_opacity (storage);
+    gwd_settings_storage_update_button_layout (storage);
+    gwd_settings_storage_update_font (storage);
+    gwd_settings_storage_update_titlebar_actions (storage);
+    gwd_settings_storage_update_blur (storage);
+    gwd_settings_storage_update_use_tooltips (storage);
+    gwd_process_decor_shadow_property_update ();
+#else
+    storage = NULL;
+#endif
+
+#undef STORAGE_USED
+
+    return TRUE;
+}
+
+void
+fini_settings ()
+{
+    g_clear_object (&storage);
+    g_clear_object (&xprop_storage);
+}
+
+gboolean
+gwd_process_decor_shadow_property_update ()
+{
+    return gwd_settings_xproperty_storage_update_all (xprop_storage);
+}

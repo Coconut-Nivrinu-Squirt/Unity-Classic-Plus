@@ -1,0 +1,275 @@
+# Russian translation for indicator-network
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the indicator-network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: indicator-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-29 12:38+0300\n"
+"PO-Revision-Date: 2016-02-15 17:40+0000\n"
+"Last-Translator: Pete Woods <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2016-08-25 06:10+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: ru\n"
+
+#: ../src/agent/SecretRequest.cpp:61
+msgid "Connect to “%1”"
+msgstr "Подключиться к “%1”"
+
+#: ../src/agent/SecretRequest.cpp:66
+msgid "WPA"
+msgstr "WPA"
+
+#: ../src/agent/SecretRequest.cpp:68
+msgid "WEP"
+msgstr "WEP"
+
+#: ../src/agent/SecretRequest.cpp:74
+msgid "Connect"
+msgstr "Подключиться"
+
+#: ../src/agent/SecretRequest.cpp:75
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../src/indicator/menuitems/wifi-link-item.cpp:109
+msgid "Other network…"
+msgstr "Другая сеть..."
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:90
+msgid "No SIM"
+msgstr "Отсутствует SIM-карта"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:97
+msgid "SIM Error"
+msgstr "Ошибка SIM-карты"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:105
+msgid "SIM Locked"
+msgstr "SIM-карта заблокирована"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:118
+msgid "Unregistered"
+msgstr "Незарегистрированный"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:123
+msgid "Unknown"
+msgstr "Неизвестный"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:128
+msgid "Denied"
+msgstr "Отказ"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:133
+msgid "Searching"
+msgstr "Поиск"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:145
+msgid "No Signal"
+msgstr "Нет сигнала"
+
+#: ../src/indicator/menuitems/wwan-link-item.cpp:157
+#: ../src/indicator/menuitems/wwan-link-item.cpp:164
+msgid "Offline"
+msgstr "Автономно"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:187
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:198
+msgid "Flight Mode"
+msgstr "Режим полёта"
+
+#: ../src/indicator/factory.cpp:208
+msgid "Cellular data"
+msgstr "Данные сотовой сети"
+
+#. TODO Move this into a new class
+#: ../src/indicator/factory.cpp:221
+msgid "Hotspot"
+msgstr "Точка доступа"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:144
+msgid "Sorry, incorrect %{1} PIN."
+msgstr "Извините, неправильный PIN-код %{1}."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:149
+#: ../src/indicator/sim-unlock-dialog.cpp:178
+msgid "This will be your last attempt."
+msgstr "Осталась последняя попытка."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:151
+msgid ""
+"If %{1} PIN is entered incorrectly you will require your PUK code to unlock."
+msgstr ""
+"Если PIN-код %{1} введён неправильно, для разблокирования вам потребуется "
+"PUK-код."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:161
+msgid "Sorry, your %{1} is now blocked."
+msgstr "Извините, операции на %{1} заблокированы."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:166
+msgid "Please enter your PUK code to unblock SIM card."
+msgstr "Введите PUK-код, чтобы разблокировать SIM-карту."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:168
+msgid "You may need to contact your network provider for PUK code."
+msgstr "Для получения PUKкода вам необходимо обратиться к оператору связи."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:176
+#: ../src/indicator/sim-unlock-dialog.cpp:190
+msgid "Sorry, incorrect PUK."
+msgstr "Неправильный PUK-код."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:180
+msgid ""
+"If PUK code is entered incorrectly, your SIM card will be blocked and needs "
+"replacement."
+msgstr ""
+"В случае введения неправильного PUK-кода, SIM-карта будет заблокирована и "
+"потребуется её замена."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:182
+msgid "Please contact your network provider."
+msgstr "Пожалуйста, обратитесь к оператору связи."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:192
+msgid "Your SIM card is now permanently blocked and needs replacement."
+msgstr "Ваша SIM-карта необратимо заблокирована и необходима её замена."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:194
+msgid "Please contact your service provider."
+msgstr "Пожалуйста, обратитесь к поставщику услуги."
+
+#: ../src/indicator/sim-unlock-dialog.cpp:218
+msgid "Sorry, incorrect PIN"
+msgstr "Извините, неправильный PIN-код"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:230
+msgid "Sorry, incorrect PUK"
+msgstr "Извините, неправильный PUK-код"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:292
+msgid "Enter %{1} PIN"
+msgstr "Введите PIN-код %{1}"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:300
+msgid "Enter PUK code"
+msgstr "Введите PUK-код"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:304
+msgid "Enter PUK code for %{1}"
+msgstr "Введите PUKкод для %{1}"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:315
+#, c-format
+msgid "1 attempt remaining"
+msgid_plural "%d attempts remaining"
+msgstr[0] "Осталась 1 попытка"
+msgstr[1] "Осталось %d попытки"
+msgstr[2] "Осталось %d попыток"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:326
+msgid "Enter new %{1} PIN"
+msgstr "Введите новый PIN-код %{1}"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:334
+msgid "Confirm new %{1} PIN"
+msgstr "Подтвердите новый PIN-код %{1} PIN"
+
+#: ../src/indicator/sim-unlock-dialog.cpp:373
+msgid "PIN codes did not match."
+msgstr "PIN-коды не совпадают."
+
+#: ../src/indicator/vpn-status-notifier.cpp:48
+msgid "The VPN connection '%1' failed."
+msgstr "Ошибка VPN соединения '%1'."
+
+#: ../src/indicator/vpn-status-notifier.cpp:50
+msgid ""
+"The VPN connection '%1' failed because the network connection was "
+"interrupted."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с прерыванием сетевого подключения."
+
+#: ../src/indicator/vpn-status-notifier.cpp:51
+msgid ""
+"The VPN connection '%1' failed because the VPN service stopped unexpectedly."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с непредвиденной остановкой службы VPN."
+
+#: ../src/indicator/vpn-status-notifier.cpp:52
+msgid ""
+"The VPN connection '%1' failed because the VPN service returned invalid "
+"configuration."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с возвратом недопустимой конфигурации "
+"службой VPN."
+
+#: ../src/indicator/vpn-status-notifier.cpp:53
+msgid ""
+"The VPN connection '%1' failed because the connection attempt timed out."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с истечением времени ожидания "
+"подключения."
+
+#: ../src/indicator/vpn-status-notifier.cpp:54
+msgid ""
+"The VPN connection '%1' failed because the VPN service did not start in time."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с тем, что служба VPN не запустилась в "
+"назначенное время."
+
+#: ../src/indicator/vpn-status-notifier.cpp:55
+msgid ""
+"The VPN connection '%1' failed because the VPN service failed to start."
+msgstr ""
+"Ошибка VPN соединения '%1', в связи с неполадкой во время запуска службы VPN."
+
+#: ../src/indicator/vpn-status-notifier.cpp:56
+msgid ""
+"The VPN connection '%1' failed because there were no valid VPN secrets."
+msgstr ""
+"VPN соединение '%1' не удалась, поскольку не было никаких действительных VPN "
+"секретов."
+
+#: ../src/indicator/vpn-status-notifier.cpp:57
+msgid "The VPN connection '%1' failed because of invalid VPN secrets."
+msgstr "VPN соединение '%1' не удалось из-за поврежденных VPN секретов."
+
+#: ../src/indicator/vpn-status-notifier.cpp:68
+msgid "VPN Connection Failed"
+msgstr "Ошибка VPN соединения"
+
+#: ../src/indicator/sections/wwan-section.cpp:102
+msgid "Cellular settings…"
+msgstr "Настройки сотовой сети..."
+
+#: ../src/indicator/sections/vpn-section.cpp:140
+msgid "VPN settings…"
+msgstr "Настройки VPN…"
+
+#: ../src/indicator/sections/wifi-section.cpp:65
+msgid "Wi-Fi settings…"
+msgstr "Настройки Wi-Fi..."
+
+#. TRANSLATORS: this is the indicator title shown on the top header of the indicator area
+#: ../src/indicator/root-state.cpp:306
+msgid "Network"
+msgstr "Сеть"
+
+#: ../src/indicator/nmofono/vpn/vpn-manager.cpp:81
+msgid "VPN connection %1"
+msgstr "VPN соединение %1"

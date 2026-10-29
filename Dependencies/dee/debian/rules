@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DPKG_GENSYMBOLS_CHECK_LEVEL = 4
+
+%:
+	dh $@ --with python2,python3,autoreconf
+
+override_dh_autoreconf:
+	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-gtk-doc
+
+override_dh_install:
+	# install the python3 gir override file as well
+	PYTHON=python3 ./configure --prefix=/usr
+	cd bindings/python/ && DESTDIR=../../debian/tmp make install && cd ../..
+	dh_install -X.la -X.a -X.pyc -X.pyo --fail-missing
+
+override_dh_python3:
+	dh_python3 debian/gir1.2-dee-1.0/usr/lib/python3
+
+override_dh_gencontrol:
+	dh_girepository
+	dh_gencontrol
+
+override_dh_strip:
+	dh_strip --dbg-package=libdee-1.0-4-dbg
+
+.PHONY: override_dh_strip

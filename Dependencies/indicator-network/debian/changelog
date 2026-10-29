@@ -1,0 +1,1104 @@
+indicator-network (0.8.0+16.10.20160915-0ubuntu1) yakkety; urgency=medium
+
+  * Remove lots of dead code, resources, and change ofono dependency to
+    suggested.
+
+ -- Pete Woods <pete.woods@canonical.com>  Thu, 15 Sep 2016 15:57:25 +0000
+
+indicator-network (0.8.0+16.10.20160817.2-0ubuntu1) yakkety; urgency=medium
+
+  [ Antti Kaijanmäki ]
+  * Use a timer to set the sim for mobile data if only one sim exists.
+    (LP: #1598010)
+
+  [ Pete Woods ]
+  * Re-enable tests on all architectures (LP: #1612619)
+
+ -- Pete Woods <pete.woods@canonical.com>  Wed, 17 Aug 2016 11:50:15 +0000
+
+indicator-network (0.8.0+16.10.20160804-0ubuntu1) yakkety; urgency=medium
+
+  [ Antti Kaijanmäki ]
+  * Add qttools5-dev-tools to build dependencies to get qdoc.
+  * Fix crash when modem becomes ready before it's SIM. (LP: #1607079)
+
+  [ Stephen M. Webb ]
+  * Update the DESKTOP_SESSION string used to identify a Unity 8 session
+    on Ubuntu desktop. (LP: #1603453)
+
+ -- Antti Kaijanmäki <antti@kaijanmaki.net>  Thu, 04 Aug 2016 12:00:04 +0000
+
+indicator-network (0.8.0+16.10.20160722-0ubuntu1) yakkety; urgency=medium
+
+  * Don't expect to have PreferredLanguages on a SIM.
+
+ -- Antti Kaijanmäki <antti@kaijanmaki.net>  Fri, 22 Jul 2016 13:14:05 +0000
+
+indicator-network (0.8.0+16.10.20160718-0ubuntu1) yakkety; urgency=medium
+
+  * Show no-simcard icon on the panel when SIM card is missing.
+
+ -- Antti Kaijanmäki <antti@kaijanmaki.net>  Mon, 18 Jul 2016 13:12:03 +0000
+
+indicator-network (0.8.0+16.10.20160705.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Pete Woods ]
+  * Only include the mobile data switch when we have modems (LP:
+    #1597683)
+
+  [ Antti Kaijanmäki, Pete Woods ]
+  * Mobile Data Switch should also track the presence of the
+    SimForMobileData. (LP: #1597615)
+
+ -- Pete Woods <pete.woods@canonical.com>  Tue, 05 Jul 2016 10:51:08 +0000
+
+indicator-network (0.8.0+16.10.20160622.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Pete ]
+  * Add SIM management API.
+
+  [ Antti Kaijanmäki ]
+  * New Connectivity Service Private API for managing mobile data and
+    SIM cards. (LP: #1373463)
+
+  [ Pete Woods ]
+  * Improve logging (LP: #1580908)
+  * add mobile data switch (LP: #1373463)
+
+  [ Antti Kaijanmäki, Pete Woods ]
+  * New Connectivity Service Private API for managing mobile data and
+    SIM cards. Tests. (LP: #1373463)
+
+ -- Antti Kaijanmäki <antti@kaijanmaki.net>  Wed, 22 Jun 2016 09:49:15 +0000
+
+indicator-network (0.7.1+16.04.20160511-0ubuntu1) xenial; urgency=medium
+
+  [ Pete Woods ]
+  * Fix limitations property (LP: #1547194)
+  * Remember hotspot UUID
+  * Store information about which device we are using in a member
+    variable
+  * Wait for hotspot device to be ready, not just present (LP: #1579221)
+  * Wait for hotspot to finish activating
+
+  [ Tony Espy ]
+  * hotspot: Don't create NM ipv4 settings with empty values. (LP:
+    #1579221)
+
+ -- Tony Espy <ci-train-bot@canonical.com>  Wed, 11 May 2016 16:57:39 +0000
+
+indicator-network (0.7.1+16.04.20160429-0ubuntu1) xenial; urgency=medium
+
+  * Add cellular data switch to the factory to introduce the
+    translatable string. (LP: #1373463)
+
+ -- Antti Kaijanmäki <antti.kaijanmaki@canonical.com>  Fri, 29 Apr 2016 14:24:07 +0000
+
+indicator-network (0.7.1+16.04.20160406.1-0ubuntu1) xenial; urgency=medium
+
+  * Use tethering Android property for hotspot interface
+
+ -- Alfonso Sanchez-Beato <alfonso.sanchez-beato@canonical.com>  Wed, 06 Apr 2016 09:32:37 +0000
+
+indicator-network (0.7.1+16.04.20160304-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Pete Woods ]
+  * Add never default property (LP: #1546573)
+  * Use a shared pending settings instance so we don't overwrite rapid
+    incoming changes (LP: #1546559)
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Fri, 04 Mar 2016 11:14:03 +0000
+
+indicator-network (0.7.1+16.04.20160223-0ubuntu1) xenial; urgency=medium
+
+  * Add keyring support to secret agent (requires libsecret) (LP:
+    #1546560)
+  * Release full PPTP support
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Tue, 23 Feb 2016 09:15:55 +0000
+
+indicator-network (0.7.1+16.04.20160217-0ubuntu1) xenial; urgency=medium
+
+  [ Pete Woods ]
+  * Correctly install all connectivity-qt headers. (LP: #1546478)
+
+  [ CI Train Bot ]
+  * No-change rebuild.
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Wed, 17 Feb 2016 11:04:58 +0000
+
+indicator-network (0.7.0+16.04.20160212-0ubuntu1) xenial; urgency=medium
+
+  [ Pete Woods ]
+  * Fix Connectivity::status property. (LP: #1531380)
+  * Add PPTP support to VPN editor.
+  * Make ofono dependency optional. (LP: #1521142)
+  * Only show the modem menu when there's actually a modem (LP:
+    #1541588)
+
+  [ Rodney Dawes ]
+  * Change the dependency on indicator-network to a Recommends. (LP:
+    #1472186)
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Fri, 12 Feb 2016 14:27:33 +0000
+
+indicator-network (0.6.0+16.04.20160106.1-0ubuntu1) xenial; urgency=medium
+
+  * Add file picker to VPN editor UI added: src/vpn-
+    editor/DialogFile.qml src/vpn-editor/DialogFileProperties.qml
+    src/vpn-editor/Openvpn/FileSelector.qml src/vpn-editor/qmldir
+  * Add missing AES 256 cipher enum
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Wed, 06 Jan 2016 23:07:43 +0000
+
+indicator-network (0.6.0+16.04.20151217-0ubuntu1) xenial; urgency=medium
+
+  [ Pete Woods ]
+  * Add VPN editing support (LP: #1361793)
+  * Add network-manager-openvpn install dependency on service.
+  * Split secret agent back out into separate process.
+  * Depend on new release of python-dbusmock (0.16.3).
+  * Don't run tests of s390x arch.
+
+  [ CI Train Bot ]
+  * No-change rebuild.
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Thu, 17 Dec 2015 11:24:37 +0000
+
+indicator-network (0.5.5+16.04.20151120-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk. added: po/wo.po
+
+  [ Pete Woods ]
+  * Stop using QMenuModel and drop it as a dependency
+  * Switch to using system-provided gmenuharness library (remove
+    vendored menuharness from tree) removed: tests/menuharness/
+    tests/menuharness/CMakeLists.txt tests/menuharness/MatchResult.cpp
+    tests/menuharness/MatchResult.h tests/menuharness/MatchUtils.cpp
+    tests/menuharness/MatchUtils.h tests/menuharness/MenuItemMatcher.cpp
+    tests/menuharness/MenuItemMatcher.h
+    tests/menuharness/MenuMatcher.cpp tests/menuharness/MenuMatcher.h
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Fri, 20 Nov 2015 11:26:35 +0000
+
+indicator-network (0.5.5+16.04.20151027-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Pete Woods ]
+  * Rework hotspot management to make it more robust (LP: #1486138)
+
+ -- Pete Woods <ci-train-bot@canonical.com>  Tue, 27 Oct 2015 12:32:55 +0000
+
+indicator-network (0.5.5+15.10.20150916-0ubuntu1) wily; urgency=medium
+
+  [ Jonas G. Drange ]
+  * Add property to determine if modems are
+    available. (LP: #1487158) (LP: #1487157)
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+ -- Jonas G. Drange <ci-train-bot@canonical.com>  Wed, 16 Sep 2015 11:14:06 +0000
+
+indicator-network (0.5.4+15.10.20150910-0ubuntu1) wily; urgency=medium
+
+  [ Jonas G. Drange ]
+  [ jonas-drange]
+  * Allow creation and configuration of insecure hotspot via the
+    connectivity service (LP: #1431876)
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Pete Woods ]
+  * Merge translations from 14.10 added: po/cy.po po/fr_CA.po po/hr.po
+    po/ia.po
+  * Sync line numbers in translation files
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 10 Sep 2015 11:16:48 +0000
+
+indicator-network (0.5.3+15.10.20150818-0ubuntu1) wily; urgency=medium
+
+  [ Pete Woods ]
+  * Link flight, WiFi and hotspot toggles. (LP: #11478159)
+  * Add properties for when different toggles should be enabled. (LP: #1478159)
+  * Add hotspot button
+  * Add icon to show when hotspot is enabled (LP: #1485491)
+  * Clean up connection from connectivity service to manager
+  * Disconnect from access points when starting hotspot (LP: #1478009)
+  * Enable Wifi when activating hotspot
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 18 Aug 2015 08:46:29 +0000
+
+indicator-network (0.5.2+15.10.20150812-0ubuntu1) wily; urgency=medium
+
+  [ Pete Woods ]
+  * Fix SIM PIN unlock dialog mis-titled Move from libnotify to internal
+    notify-cpp (LP: #1449925)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 12 Aug 2015 13:48:34 +0000
+
+indicator-network (0.5.2+15.10.20150810.1-0ubuntu1) wily; urgency=medium
+
+  [ Pete Woods ]
+  * Add hotspot management.
+  * Don't show access points when hotspot is enabled (LP: #1478160)
+  * Hold a wakelock when the hotspot is active. (LP: #1458046)
+  * Seed the random number generator (LP: #1478157)
+  * Simplify wifi/flight toggles
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 10 Aug 2015 16:51:11 +0000
+
+indicator-network (0.5.1+15.10.20150727-0ubuntu2~gcc5.1) wily; urgency=medium
+
+  * No change rebuild using GCC 5.
+
+ -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2015 11:04:40 +0200
+
+indicator-network (0.5.1+15.10.20150727-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Charles Kerr ]
+  * drop build-dependency on g++-4.9 Edit (LP: #1452327)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 27 Jul 2015 18:07:08 +0000
+
+indicator-network (0.5.1+15.10.20150708.1-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Pete Woods ]
+  * Enteprise access points invoke the system settings app with details
+    encoded in a URI
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 08 Jul 2015 20:06:55 +0000
+
+indicator-network (0.5.1+15.10.20150618.1-0ubuntu1) wily; urgency=medium
+
+  [ Pete Woods ]
+  * Add debugging to figure out what's happening to the SIM unlock on
+    Arale (LP: #1465214)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 18 Jun 2015 13:48:53 +0000
+
+indicator-network (0.5.1+15.10.20150604-0ubuntu1) wily; urgency=medium
+
+  [ Pete Woods ]
+  * Remove unity8 dependency to break cycle
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 04 Jun 2015 11:04:31 +0000
+
+indicator-network (0.5.1+15.10.20150519-0ubuntu1) wily; urgency=medium
+
+  [ Antti Kaijanmäki ]
+  * Fix .pc file and docs. (LP: #1456307)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 19 May 2015 16:21:14 +0000
+
+indicator-network (0.5.1+15.04.20150513.1-0ubuntu1) vivid; urgency=medium
+
+  [ Pete Woods ]
+  * Add flight mode and wifi toggles to connectivity service interface
+    removed: tests/integration/CMakeLists.txt
+    tests/integration/connectivity-cpp/ tests/integration/connectivity-
+    cpp/CMakeLists.txt tests/integration/connectivity-cpp/mocks/
+    tests/integration/connectivity-cpp/mocks/urfkill.h
+    tests/integration/connectivity-cpp/sig_term_catcher.h
+    tests/integration/connectivity-cpp/test_data.h.in
+    tests/integration/connectivity-cpp/test_flight_mode.cpp
+    tests/integration/connectivity-cpp/test_networking_status.cpp
+    tests/integration/connectivity-cpp/test_service.h
+    tests/integration/connectivity-cpp/test_wifi_connect.cpp
+    tests/integration/connectivity-cpp/test_wifi_link.cpp
+    tests/integration/connectivity-cpp/test_wifi_link_dedup.cpp
+    tests/integration/connectivity-cpp/test_wifi_link_enable_disable.cpp
+    tests/integration/indicator/ tests/unit/indicator/CMakeLists.txt
+    tests/unit/indicator/menuitems/CMakeLists.txt tests/unit/menumodel-
+    cpp/CMakeLists.txt tests/unit/secret-agent/CMakeLists.txt
+    tests/unit/test_variant.h added:
+    data/org.freedesktop.DBus.Properties.xml src/connectivity-api/
+    src/connectivity-api/CMakeLists.txt src/connectivity-
+    api/connectivity-qml/ src/connectivity-api/connectivity-
+    qml/CMakeLists.txt src/connectivity-api/connectivity-qt/
+    src/connectivity-api/connectivity-qt/CMakeLists.txt
+    src/connectivity-api/connectivity-qt/connectivityqt/
+    src/connectivity-api/connectivity-qt/connectivityqt/connectivity.cpp
+    src/connectivity-api/connectivity-qt/connectivityqt/connectivity.h
+    src/connectivity-api/connectivity-qt/connectivityqt/internal/
+    src/connectivity-api/connectivity-qt/connectivityqt/internal/dbus-
+    property-cache.cpp src/connectivity-api/connectivity-
+    qt/connectivityqt/internal/dbus-property-cache.h
+    tests/integration/indicator-network-test-base.cpp
+    tests/integration/indicator-network-test-base.h
+    tests/integration/test-connectivity-api.cpp renamed:
+    src/connectivity-cpp/ => src/connectivity-api/connectivity-cpp/
+    src/qdbus-stubs/DBusTypes.h => src/qdbus-stubs/dbus-types.h
+    tests/integration/indicator/CMakeLists.txt =>
+    tests/integration/CMakeLists.txt
+    tests/integration/indicator/TestIndicatorNetworkService.cpp =>
+    tests/integration/test-indicator.cpp tests/unit/secret-
+    agent/TestSecretAgent.cpp => tests/unit/secret-agent/test-secret-
+    agent.cpp
+  * Fixed some clang compiler warnings. Fixed a dodgey self-comparison
+    in operator<(const Key &other). Added some const-correctness here
+    and there. Removed an unused maxRetries variable from sim-unlock-
+    dialog. Replaced #ifndef's with #pragma once. Rename "i-n-
+    extractor.cpp" to "i-n-sniffer.cpp". renamed: src/sniffer/i-n-
+    extractor.cpp => src/sniffer/i-n-sniffer.cpp
+  * Improve grouped access point handling
+  * Merge secret agent functionality into indicator removed:
+    data/indicator-secret-agent.conf.in src/secret-agent/CMakeLists.txt
+    src/secret-agent/DBusTypes.h src/secret-agent/Localisation.h
+    src/secret-agent/gtk/ src/secret-agent/main.cpp added:
+    src/indicator/util/localisation.h tests/unit/secret-agent/secret-
+    agent-main.cpp renamed: src/secret-agent/ => src/indicator/agent/
+  * Move modems inside nmofono, sort out namespacing and class naming
+    removed: src/indicator/modem-manager.cpp src/indicator/modem-
+    manager.h added: src/indicator/icons.cpp src/indicator/icons.h
+    src/indicator/util/qhash-sharedptr.h renamed:
+    src/indicator/modem.cpp => src/indicator/nmofono/wwan/modem.cpp
+    src/indicator/modem.h => src/indicator/nmofono/wwan/modem.h
+    src/indicator/nmofono/kill-switch-impl.cpp =>
+    src/indicator/nmofono/kill-switch.cpp src/indicator/nmofono/kill-
+    switch-impl.h => src/indicator/nmofono/kill-switch.h
+    src/indicator/nmofono/wifi/grouped-access-point-impl.cpp =>
+    src/indicator/nmofono/wifi/grouped-access-point.cpp
+    src/indicator/nmofono/wifi/grouped-access-point-impl.h =>
+    src/indicator/nmofono/wifi/grouped-access-point.h
+    src/indicator/nmofono/wwan/link.h =>
+    src/indicator/nmofono/wwan/wwan-link.h
+  * Restore connectivity-cpp headers to original state removed:
+    src/connectivity-cpp/src/CMakeLists.txt src/connectivity-
+    cpp/src/platform/ src/connectivity-cpp/src/platform/nmofono/ added:
+    src/connectivity-cpp/include/connectivity/ src/connectivity-
+    cpp/include/connectivity/networking/ src/connectivity-
+    cpp/include/connectivity/networking/link.h src/connectivity-
+    cpp/include/connectivity/networking/manager.h src/connectivity-
+    cpp/include/connectivity/networking/service/ src/connectivity-
+    cpp/include/connectivity/networking/service.h src/connectivity-
+    cpp/include/connectivity/networking/service/tethering/
+    src/connectivity-
+    cpp/include/connectivity/networking/service/tethering/service.h
+    src/connectivity-cpp/include/connectivity/networking/service/tor/
+    src/connectivity-
+    cpp/include/connectivity/networking/service/tor/service.h
+    src/connectivity-cpp/include/connectivity/networking/service/vpn/
+    src/connectivity-
+    cpp/include/connectivity/networking/service/vpn/service.h
+    src/connectivity-cpp/include/connectivity/networking/wifi/
+    src/connectivity-cpp/include/connectivity/networking/wifi/access-
+    point.h src/connectivity-
+    cpp/include/connectivity/networking/wifi/link.h src/connectivity-
+    cpp/include/connectivity/networking/wwan/ src/connectivity-
+    cpp/include/connectivity/networking/wwan/link.h
+  * Simplify sniffer code removed: sniffer/nmaccesspoint.cpp
+    sniffer/nmaccesspoint.h sniffer/nmactiveconnection.cpp
+    sniffer/nmactiveconnection.h sniffer/nmconnsettings.cpp
+    sniffer/nmconnsettings.h sniffer/nmroot.cpp sniffer/nmroot.h
+    sniffer/nmsettings.cpp sniffer/nmsettings.h
+    sniffer/nmwirelessdevice.cpp sniffer/nmwirelessdevice.h
+    sniffer/ofonomodemmodem.cpp sniffer/ofonomodemmodem.h
+    sniffer/ofonomodemnetworkregistration.cpp
+    sniffer/ofonomodemnetworkregistration.h
+    sniffer/ofonomodemsimmanager.cpp sniffer/ofonomodemsimmanager.h
+    sniffer/ofonoroot.cpp sniffer/ofonoroot.h sniffer/qdbusdatatypes.h
+    sniffer/urfkillroot.cpp sniffer/urfkillroot.h
+    sniffer/urfkillswitch.cpp sniffer/urfkillswitch.h renamed: sniffer/
+    => src/sniffer/
+  * Take ownership of qt connectivity libraries from connectivity-api
+    source package. Use cmake-extras for docs, translations, etc. (LP:
+    #1447984)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 13 May 2015 15:47:07 +0000
+
+indicator-network (0.5.1+15.04.20150412-0ubuntu1) vivid; urgency=medium
+
+  [ Pete Woods ]
+  * Handle exceptions from flight mode toggle
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Sun, 12 Apr 2015 19:32:49 +0000
+
+indicator-network (0.5.1+15.04.20150401.2-0ubuntu1) vivid; urgency=medium
+
+  [ Marcus Tomlinson ]
+  * Add integration tests for indicator
+  * Port all D-Bus interactions over to QDBus (LP: #1390136, #1427064,
+    #1245951)
+
+  [ Pete Woods ]
+  * Add integration tests for indicator
+  * Port all D-Bus interactions over to QDBus (LP: #1390136, #1427064,
+    #1245951)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 01 Apr 2015 15:31:55 +0000
+
+indicator-network (0.5.1+15.04.20150217.1-0ubuntu1) vivid; urgency=medium
+
+  [ Pete Woods ]
+  * Listen to connection manager powered flag to determine the active
+    modem (LP: #1366014)
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Antti Kaijanmäki  ]
+  * Guard access to ofono::Modem properties that have a. shared_ptr
+    inside them with a mutex. simplify GMainLoopDispatcher.
+  * Remove unused variable in extractor
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 17 Feb 2015 15:32:13 +0000
+
+indicator-network (0.5.1+15.04.20150210.1-0ubuntu1) vivid; urgency=medium
+
+  [ Jussi Pakkanen ]
+  * Bump dbus-cpp dependency to trigger rebuild. (LP: #1412854)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 10 Feb 2015 14:09:19 +0000
+
+indicator-network (0.5.1+15.04.20141216-0ubuntu1) vivid; urgency=low
+
+  [ Jussi Pakkanen ]
+  * Created network status sniffer tool to aid in debugging.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 16 Dec 2014 08:14:54 +0000
+
+indicator-network (0.5.1+15.04.20141215-0ubuntu1) vivid; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * debian/control: add Multi-Arch: foreign (LP: #1400502)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 15 Dec 2014 08:30:45 +0000
+
+indicator-network (0.5.1+15.04.20141212-0ubuntu1) vivid; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * fix flighmode switch bouncing on krillin. (LP: #1393488)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 12 Dec 2014 12:11:34 +0000
+
+indicator-network (0.5.1+15.04.20141211-0ubuntu1) vivid; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * add com.ubuntu.connectivity1.Private.UnlockModem (LP: #1374082)
+  * Clear pin unlock dialog error and popup when the dialog closes. (LP:
+    #1382033)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 11 Dec 2014 09:32:52 +0000
+
+indicator-network (0.5.1+15.04.20141103-0ubuntu1) vivid; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Jussi Pakkanen ]
+  * Use std::quick_exit. (LP: #1381041)
+
+  [ Marcus Tomlinson ]
+  * Fix GMainLoopDispatch dispatching ordering when. called inside
+    GMainLoop already Fix GMainLoopDispatch locking. Force all signals
+    from external (dbus-cpp) threads through. GMainLoopDispatch (LP:
+    #1374419)
+
+  [ Antti Kaijanmäki ]
+  * Increase the default timeouts to match industry standards. (LP:
+    #1381041)
+  * Fix GMainLoopDispatch dispatching ordering when. called inside
+    GMainLoop already Fix GMainLoopDispatch locking. Force all signals
+    from external (dbus-cpp) threads through. GMainLoopDispatch (LP:
+    #1374419)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 03 Nov 2014 11:48:11 +0000
+
+indicator-network (0.5.1+14.10.20141015-0ubuntu1) 14.09; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * deadlock if calling unlock() inside ready signal for a modem that
+    does not require unlocking. (LP: #1333121)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 15 Oct 2014 12:47:24 +0000
+
+indicator-network (0.5.1+14.10.20141014-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Fix UnlockAllModems. (LP: #1333121)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 14 Oct 2014 21:12:57 +0000
+
+indicator-network (0.5.1+14.10.20141010-0ubuntu1) utopic; urgency=low
+
+  [ Jussi Pakkanen ]
+  * Made trace logging a compile time option. (LP: #1376302)
+  * Exit gracefully if notification server vanishes. (LP: #1368517)
+  * More crash protection.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 10 Oct 2014 20:33:41 +0000
+
+indicator-network (0.5.1+14.10.20141008-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Antti Kaijanmäki ]
+  * Finish the dual sim unlocking.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 08 Oct 2014 09:46:11 +0000
+
+indicator-network (0.5.1+14.10.20141007.2-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Fix wifi toggle on krillin. (LP: #1368523)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 07 Oct 2014 17:33:59 +0000
+
+indicator-network (0.5.1+14.10.20141007.1-0ubuntu1) utopic; urgency=low
+
+  [ Jussi Pakkanen ]
+  * Dbus-cpp crash fix. (LP: #1343341)
+  * Mark modem as unavailable if modem manager is missing. (LP:
+    #1356200)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 07 Oct 2014 12:48:40 +0000
+
+indicator-network (0.5.1+14.10.20141006-0ubuntu1) utopic; urgency=low
+
+  [ Charles Kerr ]
+  * Move the position of this indicator on the panel. (LP: #1377294)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 06 Oct 2014 17:27:23 +0000
+
+indicator-network (0.5.1+14.10.20140904-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Jussi Pakkanen ]
+  * More try/catch wrapping for dbus-cpp explosions. (LP: #1348789)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 04 Sep 2014 13:09:29 +0000
+
+indicator-network (0.5.1+14.10.20140829-0ubuntu1) utopic; urgency=low
+
+  [ Jussi Pakkanen ]
+  * A few more graceful exits. (LP: #1343541)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 29 Aug 2014 14:09:13 +0000
+
+indicator-network (0.5.1+14.10.20140826-0ubuntu1) utopic; urgency=low
+
+  [ Jussi Pakkanen ]
+  * Exit gracefully on dbus error conditions. (LP: #1343341)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 26 Aug 2014 15:04:09 +0000
+
+indicator-network (0.5.1+14.10.20140824-0ubuntu1) utopic; urgency=low
+
+  [ Martin Pitt ]
+  * Mark for using language packs.
+
+  [ Jussi Pakkanen ]
+  * Support accented characters in access point names.
+
+  [ Antti Kaijanmäki ]
+  * Support accented characters in access point names.
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sun, 24 Aug 2014 08:42:49 +0000
+
+indicator-network (0.5.1+14.10.20140820.6-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Antti Kaijanmäki ]
+  * Restructured the source tree to separate the different components
+    better.
+  * Add Connectivity Service. (LP: #1302049)
+  * Connectivity Service Qt and QML bindings. (LP: #1341548)
+  * Documentation for the connectivity Qt C++ and QML API Also fix
+    licensing information. (LP: #1341548)
+  * Move in connectivity-cpp from lp:connectivity-api. Move out
+    libconnectivity-qt and qtdeclarative5-connectivity-plugin. to
+    lp:connectivity-api (LP: #1341548)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 20 Aug 2014 22:31:54 +0000
+
+indicator-network (0.5.1+14.10.20140808.2-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Antti Kaijanmäki ]
+  * Handle NetworkRegistration::Status::unknown better. Improve the
+    panel modemTechIcon handling a bit on dual sim. Update translation
+    tempate. (LP: #1315144)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 08 Aug 2014 12:51:24 +0000
+
+indicator-network (0.5.1+14.10.20140807-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Add ModemInfoItem. (LP: #1315144)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 07 Aug 2014 01:46:51 +0000
+
+indicator-network (0.5.1+14.10.20140805-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Add missing break to switch-case. When ofono tells modem supports
+    RadioSettings interface there is an unintentional falltrough which
+    causes ofono code to try to create an SimManager instead. (LP:
+    #1352744)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 05 Aug 2014 17:22:18 +0000
+
+indicator-network (0.5.1+14.10.20140725-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Mirco Müller ]
+  * Make use of the x-canonical-non-shaped-icon hint to suppress masking
+    the symbolic icon with an UbuntuShape. (LP: #1346904)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 25 Jul 2014 09:02:58 +0000
+
+indicator-network (0.5.1+14.10.20140722-0ubuntu1) utopic; urgency=low
+
+  [ Charles Kerr ]
+  * Make g++ version explicit for ABI safety
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 22 Jul 2014 21:44:56 +0000
+
+indicator-network (0.5.1+14.10.20140715-0ubuntu1) utopic; urgency=low
+
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 15 Jul 2014 14:09:49 +0000
+
+indicator-network (0.5.1+14.10.20140709.2-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Antti Kaijanmäki ]
+  * Flight Mode support. Added virtual destructors to base classes with
+    virtual methods. Do not let exceptions escape the destructor. .
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 09 Jul 2014 10:17:57 +0000
+
+indicator-network (0.5.1+14.10.20140625-0ubuntu1) utopic; urgency=low
+
+  [ Sebastien Bacher ]
+  * use in unity8 desktop sessions
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 25 Jun 2014 08:19:26 +0000
+
+indicator-network (0.5.1+14.10.20140623-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Ricardo Salveti de Araujo ]
+  * Changing signal strength thresholds to follow values use by Android
+    (LP: #1329945) (LP: #1329945)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 23 Jun 2014 18:55:23 +0000
+
+indicator-network (0.5.1+14.10.20140602-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Antti Kaijanmäki ]
+  * Use x-canonical-snap-decisions-timeout on the wifi password and sim
+    unlock dialogs to prevent them from expiring automatically. (LP:
+    #1295762)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 02 Jun 2014 11:03:06 +0000
+
+indicator-network (0.5.1+14.10.20140526.1-0ubuntu1) utopic; urgency=low
+
+  [ Michael Terry ]
+  * Watch for NetworkManager name changes on DBus and re-register with
+    it when they happen. (LP: #1319580)
+  * Add back support for phone_greeter and desktop_greeter. (LP:
+    #1320339)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 May 2014 15:09:01 +0000
+
+indicator-network (0.5.1+14.10.20140523-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * enable translations.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 23 May 2014 12:16:47 +0000
+
+indicator-network (0.5.1+14.10.20140516.2-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Fix crash when ofono is not running. (LP: #1320220)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 16 May 2014 16:07:02 +0000
+
+indicator-network (0.5.1+14.10.20140515-0ubuntu1) utopic; urgency=low
+
+  [ Antti Kaijanmäki ]
+  * Fix 3g icon. (LP: #1319812)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 15 May 2014 23:16:58 +0000
+
+indicator-network (0.5.1+14.10.20140514.1-0ubuntu1) utopic; urgency=low
+
+  [ Jussi Pakkanen ]
+  * C++ service using the connectivity-api. (LP: #1223652)
+
+  [ Antti Kaijanmäki ]
+  * C++ service using the connectivity-api. (LP: #1223652)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 14 May 2014 11:54:53 +0000
+
+indicator-network (0.5.1+14.04.20140409.1-0ubuntu1) trusty; urgency=low
+
+  [ Ted Gould ]
+  * Synchronize process management across indicators (LP: #1233226)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 09 Apr 2014 21:38:03 +0000
+
+indicator-network (0.5.1+14.04.20140318-0ubuntu1) trusty; urgency=low
+
+  [ Colin Watson ]
+  * Only build-depend on valgrind on architectures that have it.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 18 Mar 2014 21:29:32 +0000
+
+indicator-network (0.5.1+14.04.20140305-0ubuntu1) trusty; urgency=low
+
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 05 Mar 2014 13:22:28 +0000
+
+indicator-network (0.5.1+14.04.20140207-0ubuntu1) trusty; urgency=low
+
+  [ Ted Gould ]
+  * Adding acceptance tests and merge review policies.
+
+  [ Nick Dedekind ]
+  * Fixed position as per design spec (lp#1262611)
+    https://wiki.ubuntu.com/StatusBar. (LP: #1262611)
+
+  [ CI bot ]
+  * Adding acceptance tests and merge review policies
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 07 Feb 2014 16:30:13 +0000
+
+indicator-network (0.5.1+14.04.20131125-0ubuntu1) trusty; urgency=low
+
+  [ Lars Uebernickel ]
+  * Bump vala dependency to 0.22.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 316
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 25 Nov 2013 03:56:34 +0000
+
+indicator-network (0.5.1+14.04.20131107-0ubuntu1) trusty; urgency=low
+
+  [ Ken VanDine ]
+  * Updated argument types in override functions for changes in vala-
+    0.22 . (LP: #1244522)
+
+  [ Ted Gould ]
+  * Use proper quotes in user facing strings.
+  * Make it so we have a single notification in flight at a time. (LP:
+    #1236763)
+  * When cancel is hit return as a no password to Network Manager. (LP:
+    #1236386)
+  * Use a shared pointer to make it more Java like and some tests for
+    closing notifications.
+  * Adding a phone_greeter profile.
+
+  [ Lars Uebernickel ]
+  * Don't try to DBus-activate ofono (lp;1248880) Ofono doesn't ship
+    with a service file and is managed by upstart anyway. (LP: #1248880)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 314
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 07 Nov 2013 12:31:39 +0000
+
+indicator-network (0.5.1+13.10.20131015.2-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Remove final temporary icons. (LP: #1220418)
+
+  [ Antti Kaijanmäki ]
+  * Listen wireless-enabled signal. (LP: #1220332)
+  * Fix root icon when connected to WPA2-only or WEP AP. (LP: #1237357)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 306
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 15 Oct 2013 18:39:34 +0000
+
+indicator-network (0.5.1+13.10.20131011-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Ensure APs with SSIDs we don't want to show aren't shown. (LP:
+    #1231532, #1088956)
+  * Check to make sure we don't get zero interfaces back. (LP: #1232651)
+  * Force the UI of other APs to be disabled when starting a new
+    connection. (LP: #1233194)
+  * Only select active connection once it has a device.
+  * Stop AP actions from being removed by the menu object.
+  * Don't output cell strength to log files. (LP: #1228083)
+  * Removing settings items for network prompting.
+  * Listen to auto-reconnect setting. (LP: #1236747)
+
+  [ Nick Dedekind ]
+  * SIM pin/puk unload menu & dialog notification.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 302
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 11 Oct 2013 04:28:09 +0000
+
+indicator-network (0.5.1+13.10.20131005-0ubuntu1) saucy; urgency=low
+
+  * Revert the revert!  Return to contents of 0.5.1+13.10.20131004-0ubuntu1 as
+    unity8 is now fixed.
+
+ -- Loïc Minier <loic.minier@ubuntu.com>  Sat, 05 Oct 2013 11:42:12 +0200
+
+indicator-network (0.5.1+13.10.20131004.1-0ubuntu1) saucy; urgency=low
+
+  * Revert 0.5.1+13.10.20131004-0ubuntu1; return to
+    0.5.0+13.10.20130918-0ubuntu1 as we're reverting unity8 and this required
+    the new unity8.
+
+ -- Loïc Minier <loic.minier@ubuntu.com>  Fri, 04 Oct 2013 21:16:17 +0200
+
+indicator-network (0.5.1+13.10.20131004-0ubuntu1) saucy; urgency=low
+
+  [ Pete Woods ]
+  * Add network manager secret agent.
+    * Interfaces with unity8's extended snap decisions.
+
+  [ Charles Kerr ]
+  * One-liner to set GETTEXT_PACKAGE explicitly because dh_translations
+    can't handle ${CMAKE_PROJECT_NAME}. (LP: #1233679)
+
+  [ Ted Gould ]
+  * Drop Airplane Mode for Phone 1.0. (LP: #1232832)
+  * Update settings URL to settings:///system. (LP: #1231444)
+  * Remove icons that have made it into the theme.
+  * Depend on XDG Python lib for the Apport hook. (LP: #1233138)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 291
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 04 Oct 2013 02:29:39 +0000
+
+indicator-network (0.5.0+13.10.20130918-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Add a phone settings menu to the DBus interface.
+  * Moving indicator to be on the far left. (LP: #1226033)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 284
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 18 Sep 2013 06:24:28 +0000
+
+indicator-network (0.5.0+13.10.20130913-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Adding in temporary gsm icons as well.
+  * Adding title to the base action state. (LP: #1223635)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 281
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 13 Sep 2013 15:16:35 +0000
+
+indicator-network (0.5.0+13.10.20130829-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Disable secret agent (for now). (LP: #1218385)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 278
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 29 Aug 2013 18:07:29 +0000
+
+indicator-network (0.5.0+13.10.20130828.2-0ubuntu1) saucy; urgency=low
+
+  [ Pete Woods ]
+  * Re-write build scripts in preparation for merging the secret agent
+    codebase and tests.
+  * Move the secret agent code over into this package.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 276
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 28 Aug 2013 10:09:20 +0000
+
+indicator-network (0.5.0+13.10.20130827.3-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Put oFono proxies in a HashTable to better track usage.
+  * Adds settings items for cellular and Wifi.
+  * Add in gettext and make user visible strings translatable.
+  * Drop GTK build dep and old secret agent code.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 273
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 27 Aug 2013 14:10:33 +0000
+
+indicator-network (0.5.0+13.10.20130823.1-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Track oFono modems to see if they get the required interfaces later.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 268
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 23 Aug 2013 22:07:05 +0000
+
+indicator-network (0.5.0+13.10.20130823-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Handle cellular connections in the panel icon.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 266
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 23 Aug 2013 18:07:36 +0000
+
+indicator-network (0.5.0+13.10.20130821-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Set base action parameter_type to null.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 264
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 21 Aug 2013 06:07:03 +0000
+
+indicator-network (0.5.0+13.10.20130812.1-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Add position to the config file.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 262
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 12 Aug 2013 06:06:41 +0000
+
+indicator-network (0.5.0+13.10.20130809-0ubuntu1) saucy; urgency=low
+
+  [ Mathieu Trudel-Lapierre ]
+  * Connect device state change signals to properly track device state with
+    the menu item switches.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 260
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 09 Aug 2013 02:02:48 +0000
+
+indicator-network (0.5.0+13.10.20130807-0ubuntu1) saucy; urgency=low
+
+  [ Mathieu Trudel-Lapierre ]
+  * Minor fixes: - Improve "symmetry" in connecting/disconnecting
+    signals for wifi devices and access points. - Small code
+    simplifications. - Properly set busy_action state for Disabled
+    states.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 258
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 07 Aug 2013 02:03:26 +0000
+
+indicator-network (0.5.0+13.10.20130806-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Conflict with indicators-client-plugin-network.
+  * Adjusting binaries to match other indicators.
+  * Put WiFi menu code in it's own object to allow for growth.
+  * Add a SIGTERM handler.
+  * Split the profiles into separate menus.
+  * Add a mobile section to the menus.
+  * Add in Ethernet support.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 256
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 06 Aug 2013 02:02:24 +0000
+
+indicator-network (0.5.0+13.10.20130712-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Change the name of the service to match others and make the icon
+    more robust.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 248
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 12 Jul 2013 02:03:10 +0000
+
+indicator-network (0.5.0+13.10.20130703.1-0ubuntu1) saucy; urgency=low
+
+  [ Jeremy Bicha ]
+  * debian/control:
+    - Build with valac (>= 0.18) instead of vala-0.18 for easier transitions 
+ 
+  [ Ted Gould ]
+  * Migrating to new libindicator format.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 246
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 03 Jul 2013 14:16:41 +0000
+
+indicator-network (0.5.0-0ubuntu1) saucy; urgency=low
+
+  [ Ken VanDine ]
+  * Initial packaging
+
+  [ Mathieu Trudel-Lapierre ]
+  * Automatic snapshot from revision 243 (bootstrap).
+  * debian/copyright: update, fix license texts, we use (L)GPL-3, not "and
+    later" versions.
+  * debian/changelog: use the right version number for non-native package, name
+    to indicator-network properly.
+  * debian/control:
+    - Update Vcs-Bzr, Vcs-Browser, add notice to developers. 
+    - Add python3 to Build-Depends.
+    - Add python3-dbusmock to Build-Depends.
+    - Add dbus-test-runner to Build-Depends.
+    - Drop libpulse-dev from Build-Depends.
+    - Add indicators-client to Depends for indicator-network.
+  * debian/rules:
+    - Reorder targets.
+    - Add DPKG_GENSYMBOLS_CHECK_LEVEL.
+    - Clean *.la, *.a files.
+    - Run tests within dbus-test-runner.
+
+ -- Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>  Thu, 02 May 2013 16:01:57 -0700

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/com/ubuntu/connectivity1/Private" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
+    <interface name="com.ubuntu.connectivity1.Private">
+
+        <method name="UnlockAllModems">
+        </method>
+
+        <method name="UnlockModem">
+            <arg type="s" direction="in" name="modem"/>
+        </method>
+        <method name="SetFlightMode">
+            <arg type="b" direction="in" name="enabled"/>
+        </method>
+
+        <method name="SetWifiEnabled">
+            <arg type="b" direction="in" name="enabled"/>
+        </method>
+
+        <method name="SetHotspotSsid">
+            <arg type="ay" direction="in" name="ssid"/>
+        </method>
+
+        <method name="SetHotspotPassword">
+            <arg type="s" direction="in" name="password"/>
+        </method>
+
+        <method name="SetHotspotEnabled">
+            <arg type="b" direction="in" name="enabled"/>
+        </method>
+
+        <method name="SetHotspotMode">
+            <arg type="s" direction="in" name="mode"/>
+        </method>
+
+        <method name="SetHotspotAuth">
+            <arg type="s" direction="in" name="auth"/>
+        </method>
+
+        <method name="AddVpnConnection">
+            <arg type="i" direction="in" name="type"/>
+            <arg type="o" direction="out" name="path"/>
+        </method>
+
+        <method name="RemoveVpnConnection">
+            <arg type="o" direction="in" name="path"/>
+        </method>
+
+        <property name="HotspotPassword" type="s" access="read"/>
+
+        <property name="HotspotAuth" type="s" access="read"/>
+        
+        <property name="VpnConnections" type="ao" access="read"/>
+
+        <property name="MobileDataEnabled" type="b" access="readwrite"/>
+
+        <property name="SimForMobileData" type="o" access="readwrite"/>
+
+        <property name="Modems" type="ao" access="read"/>
+
+        <property name="Sims" type="ao" access="read"/>
+
+        <signal name="ReportError">
+            <arg type="i" direction="out" name="reason"/>
+        </signal>
+
+    </interface>
+</node>
+

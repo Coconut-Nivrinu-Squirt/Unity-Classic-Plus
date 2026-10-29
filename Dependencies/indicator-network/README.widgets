@@ -1,0 +1,77 @@
+########################## DBUSMENU WIDGETS PROPERTIES #############################
+
+unity.widgets.systemsettings.*.wifisection
+
+==[$(label)]========$(busy)=
+[ AP                       ]
+[ AP                       ]
+[ ...                      ]
+
+Properties:
+    "label"              - string - Optional, may have label or not
+    "type"               - string = "x-canonical-system-settings"
+    "x-canonical-children-display" - string = "inline"
+    "x-canonical-widget-type"      - string = "unity.widgets.systemsettings.tablet.wifisection"
+    "x-canonical-busy-action"      - boolean - Shows a spinner indicating activity
+Actions:
+    $(x-canonical-busy-action):
+        - boolean - Whether the item is busy or not
+
+------------------------------------------------------------------------------------
+unity.widgets.systemsettings.*.accesspoint
+
+ [ *))) AP_SSID  # | > ]
+
+Properties:
+    "type"                      - string = "x-canonical-system-settings"
+    "toggle-type"               - string = "radio"
+    "x-canonical-widget-type"   - string = "unity.widgets.systemsettings.tablet.accesspoint"
+    "x-canonical-wifi-ap-is-adhoc"        - bool   - Whether it is an adhoc network or not
+    "x-canonical-wifi-ap-is-secure"       - bool   - Whether the network is open or requires password
+    "x-canonical-wifi-ap-bssid"           - string - The internal unique id for the AP
+    "x-canonical-wifi-ap-strength-action" - string - The action string id to gather the strength from
+    "action" - string - The action string id to check whether the AP is active
+Actions:
+    $(x-canonical-wifi-ap-strength-action):
+        - byte - Signal strength of the access point [0-100]
+    $(action):
+        - bool - Whether the AP is the active one or not
+
+    
+
+------------------------------------------------------------------------------------
+unity.widgets.systemsettings.*.listitem
+
+ [ *STATUS*    connected ]
+
+ Build properties:
+    "type"                    - string = "x-canonical-system-settings"
+    "x-canonical-widget-type" - string = "unity.widgets.systemsettings.tablet.listitem"
+ Other properties:
+    "label"                     - string - The title of the information (ie "Status")
+    "x-canonical-extra-label"   - string - The value of the information (ie "Connected")
+-----------------------------------------------------------------------------------
+
+unity.widgets.systemsettings.*.volumecontrol
+
+[ ))) ---------*-------- ]
+
+Properties:
+  "type"	              - string = "x-canonical-system-settings"
+  "x-canonical-widget-type"   - string = "unity.widget.systemsettings.tablet.volumecontrol"
+  "action"                    - string = "volume"
+
+  The volume value has to be taken off the GAction state
+  "volume"            - double [0.0..1.0]
+
+
+-----------------------------------------------------------------------------------
+
+[ *LABEL*        ( |#) ]
+
+Properties:
+    "type"                    - string = "x-canonical-system-settings"
+    "x-canonical-widget-type" - string = "unity.widgets.systemsettings.tablet.switch"
+    "action"                  - string = "mute"
+    "label"                   - string = The title of the information (ie "Mute")
+

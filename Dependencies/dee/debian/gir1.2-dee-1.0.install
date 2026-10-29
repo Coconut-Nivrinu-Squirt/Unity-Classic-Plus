@@ -1,0 +1,2 @@
+debian/tmp/usr/lib/*/girepository-1.0/ usr/lib/
+debian/tmp/usr/lib/python*/*-packages/gi/overrides/*.py

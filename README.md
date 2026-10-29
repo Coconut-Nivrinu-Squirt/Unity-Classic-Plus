@@ -60,7 +60,7 @@ Starting with V1 of the project, contributions are welcome.
 Contributors who wish to contribute shall add themselves to the AUTHORS file using the name, alias, or online identity by which they wish to be recognized by others within the project.
 ### Why 7.4.0?
 To see the reasoning behind this chosen baseline, please see:
-[7.4.0_BASE_REASONS.md](7.4.0_BASE_REASONS.md)
+[7.4.0_BASE_REASONS.md](Archive/7.4.0_BASE_REASONS.md)
 ### Development test systems in play
 Overall requirements between all systems:
 - All systems must pass accessibility experience testing.
@@ -143,7 +143,7 @@ These Roadmap Notes are considered part of the initial V0 project constitution. 
 | Version | Focus | Intended Features to Be Added | Success Criteria | Completion Status |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | V0 | Archival foundations | None | Canonical Unity 7.4.0 is archived with properly adjusted documentation. | Completed |
-| V1 | Build desktop environment foundations | None | The desktop environment builds without distribution-specific requirements, functions with its existing features, and has its discovered build assumptions and dependencies documented. | Planned |
+| V1 | Build desktop environment foundations | None | The desktop environment builds without distribution-specific requirements, functions with its existing features, and has its discovered build assumptions and dependencies documented. | Dependency Audit Pass 1 Complete. No code changes yet, Collecting inital dependencies that do not have active maintainership. |
 | V2 | Stabilize and simplify necessary code | Basic accessibility, with screen reader functionality work beginning | Unnecessary runtimes causing bloat are removed, and a basic accessibility implementation is started and functional. | Planned |
 | V3 | Improve accessibility integration | Moderate-to-high accessibility | 50% of accessibility experience testing passes with no instant failures. | Planned |
 | V4 | Finalize accessibility integrations and begin performance improvements | Near-perfect accessibility; low-end systems should not suffer performance issues | All accessibility experience testing passes with no instant failures. The hard-drive-based testing system does not feel sluggish during use, even with accessibility features enabled. | Planned |
